@@ -23,7 +23,7 @@ Use it in a playbook as follows:
 ```yaml
 - hosts: all
   roles:
-    - lr1980.haproxy-exporter
+    - lr1980.ansible-haproxy-exporter
 ```
 
 ## License
