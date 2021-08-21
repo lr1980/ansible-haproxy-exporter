@@ -36,6 +36,11 @@
   delegate_to: localhost
   check_mode: false
 
+- name: install unzip (need for unpack/unarchive)
+  ansible.builtin.package:
+    name: unzip
+    state: present
+
 - name: Unpack haproxy_exporter binary
   become: false
   unarchive:
